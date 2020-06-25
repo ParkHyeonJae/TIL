@@ -26,6 +26,10 @@
 
 - 유니티
 - C#
+- Direct 2D
+- Direct 3D
+- Unreal Engine
+- C/C++
 
 
 
