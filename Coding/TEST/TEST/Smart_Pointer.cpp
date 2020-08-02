@@ -18,6 +18,9 @@ public:
 
 int main()
 {
+	/* Person 객체를 가리키는 unique_ptr인스턴스인 hong은 
+	일반 포인터와는 달리 사용이 끝난 후에 delete 키워드를 사용하여 메모리를 해제할 필요가 없다.
+	*/
 	unique_ptr<Person> hong = make_unique<Person>("박현재", 18);
 	hong->ShowPersonInfo();
 
@@ -29,6 +32,8 @@ Person::Person(const string& name, int age)
 	this->name = name;
 	this->age = age;
 	cout << "생성자가 호출되었습니다." << endl;
+
+
 }
 
 void Person::ShowPersonInfo()
