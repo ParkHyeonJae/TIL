@@ -26,7 +26,7 @@ SimpleCat::~SimpleCat()
 {
 	cout << "Simple Cat Destructor..\n";
 }
-const SimpleCat* const FunctionTwo(const SimpleCat*const theCat);
+const SimpleCat & FunctionTwo(const SimpleCat& theCat);
 int main()
 {
 	cout << "Making a cat..\n";
@@ -43,7 +43,7 @@ int main()
 	cout << " year old\n";
 	cout << "-------------------\n";
 	cout << "Calling FunctionTwo..\n";
-	FunctionTwo(&Frisky);
+	FunctionTwo(Frisky);
 	cout << "-------------------\n";
 	cout << "Frisky is ";
 	cout << Frisky.GetAge();
@@ -53,10 +53,10 @@ int main()
 	return 0;
 }
 // FunctionTwo, passes by reference
-const SimpleCat* const  FunctionTwo(const SimpleCat*const theCat)
+const SimpleCat & FunctionTwo(const SimpleCat& theCat)
 {
 	cout << "Function Two. Returning..\n";
-	cout << "Frisky is now " << theCat->GetAge();
+	cout << "Frisky is now " << theCat.GetAge();
 	cout << " years old \n";
 	// theCat->SetAge(6); const !
 	return theCat;
