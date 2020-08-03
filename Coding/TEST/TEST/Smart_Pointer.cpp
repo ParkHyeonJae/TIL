@@ -3,43 +3,48 @@
 
 using namespace std;
 
-class Person
+class SimpleCat
 {
-private:
-	string name;
-	int age;
 public:
-	Person(const string& name, int age);		//기초 클래스 생성자의 선언
-	~Person() { cout << "소멸자가 호출되었습니다." << endl; }
-
-	void ShowPersonInfo();
+	SimpleCat();			// Constructor
+	SimpleCat(SimpleCat& simplecat);		//Copy constructor
+	~SimpleCat();		//destructor
 };
-
-
+SimpleCat::SimpleCat()
+{
+	cout << "Simple Cat Constructor..\n";
+}
+SimpleCat::SimpleCat(SimpleCat& simplecat)
+{
+	cout << "Simple Cat Copy Constructor...\n";
+}
+SimpleCat::~SimpleCat()
+{
+	cout << "Simple Cat Destructor..\n";
+}
+SimpleCat FunctionOne(SimpleCat theCat);
+SimpleCat* FunctionTwo(SimpleCat* theCat);
 int main()
 {
-	shared_ptr<Person> hong = make_shared<Person>("박현재", 18);
-	cout << "현재 소유자 수 : " << hong.use_count() << endl;
-
-	auto han = hong;
-
-	cout << "현재 소유자 수 : " << hong.use_count() << endl;
-
-	han.reset();
-
-	cout << "현재 소유자 수 : " << hong.use_count() << endl;
+	cout << "Making a cat...\n";
+	SimpleCat frisky;
+	cout << "Calling FunctionOne.. \n";
+	FunctionOne(frisky);
+	cout << "Calling FunctionTwo...\n";
+	FunctionTwo(&frisky);
 
 	return 0;
 }
-
-Person::Person(const string& name, int age)
+// FunctionOne, passes by value
+SimpleCat FunctionOne(SimpleCat theCat)
 {
-	this->name = name;
-	this->age = age;
-	cout << "생성자가 호출되었습니다." << endl;
+	cout << "Function One. Returning..\n";
+	return theCat;
 }
 
-void Person::ShowPersonInfo()
+// FunctionTwo, passes by reference
+SimpleCat* FunctionTwo(SimpleCat* theCat)
 {
-	cout << name << "의 나이는 " << age << "살입니다." << endl;
+	cout << "Function Two. Returning..\n";
+	return theCat;
 }
