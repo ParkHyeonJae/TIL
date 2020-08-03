@@ -43,6 +43,13 @@ int main()
 
 	vector<shared_ptr<thread>> threads;
 	
+	for (int i = 0; i < ThreadCount; i++)
+	{
+		shared_ptr<thread> thread(new thread([&]() {
+
+			}));
+	}
+
 
 	return 0;
 }
