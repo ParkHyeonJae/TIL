@@ -42,6 +42,7 @@ int main()
 
 shared_ptr<SimpleCat> TheFunction()
 {
+	
 	shared_ptr<SimpleCat> frisky = make_shared<SimpleCat>(5, 9);
 	cout << "frisky is " << frisky->GetAge() << " years old\n";
 	return frisky;
