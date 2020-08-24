@@ -8,7 +8,7 @@
 using namespace std;
 
 const int MaxCount = 150000;
-const int ThreadCount = 4;
+const int ThreadCount = 8;
 
 bool IsPrimeNumebr(int number)
 {
@@ -84,7 +84,7 @@ int main()
 	auto t1 = chrono::system_clock::now();
 
 	auto duration = chrono::duration_cast<chrono::milliseconds>(t1 - t0).count();
-	PrintNumber(primes);
+	//PrintNumber(primes);
 
 
 	cout << "Took " << duration << " milliseconds." << endl;
