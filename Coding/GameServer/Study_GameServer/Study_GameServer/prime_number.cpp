@@ -4,13 +4,12 @@
 using namespace std;
 
 const int MaxCount = 150000;
-
-bool IsPrimeNumber(int number);
+bool IsPrimeNumber(int number);           
 void PrintNumbers(const vector<int> &primes);
-
 
 int main()
 {
+	
 	vector<int> primes;
 
 	auto t0 = chrono::system_clock::now();
