@@ -21,8 +21,3 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
-      - name: C++ code check using clang/cppcheck/flawfinder
-      # You may pin to the exact commit or the version.
-      # uses: Tlazypanda/cpp-clang-check@04a60b06b9d47aa96700292df9951674d8c37a06
-        uses: Tlazypanda/cpp-clang-check@0.13
