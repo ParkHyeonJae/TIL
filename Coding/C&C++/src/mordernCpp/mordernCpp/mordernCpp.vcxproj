@@ -139,7 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="copyNmoveCtor.cpp" />
+    <ClCompile Include="copyNmoveCtor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="MobilePhone.cpp" />
+    <ClCompile Include="preprocessor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MobilePhone.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

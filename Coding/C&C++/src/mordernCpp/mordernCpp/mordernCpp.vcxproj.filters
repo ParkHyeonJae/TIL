@@ -13,10 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\ctor">
+      <UniqueIdentifier>{b6d5ebf6-49f5-45a2-b3a8-5da512e8a552}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\preprocessor">
+      <UniqueIdentifier>{62653da3-d538-4710-babf-c2b7ddcfaaa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\preprocessor">
+      <UniqueIdentifier>{0d8d3d60-79a9-47d7-a4c6-b88dcb8b5e38}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="copyNmoveCtor.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\ctor</Filter>
     </ClCompile>
+    <ClCompile Include="preprocessor.cpp">
+      <Filter>소스 파일\preprocessor</Filter>
+    </ClCompile>
+    <ClCompile Include="MobilePhone.cpp">
+      <Filter>소스 파일\preprocessor</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MobilePhone.h">
+      <Filter>헤더 파일\preprocessor</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
