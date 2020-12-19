@@ -22,6 +22,9 @@
     <Filter Include="헤더 파일\preprocessor">
       <UniqueIdentifier>{0d8d3d60-79a9-47d7-a4c6-b88dcb8b5e38}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Array">
+      <UniqueIdentifier>{e87191a7-8d96-4a3c-822e-baa3c42e8ed0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="copyNmoveCtor.cpp">
@@ -32,6 +35,9 @@
     </ClCompile>
     <ClCompile Include="MobilePhone.cpp">
       <Filter>소스 파일\preprocessor</Filter>
+    </ClCompile>
+    <ClCompile Include="Array.cpp">
+      <Filter>소스 파일\Array</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
