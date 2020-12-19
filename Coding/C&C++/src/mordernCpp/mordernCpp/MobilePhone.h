@@ -37,6 +37,5 @@ private:
 	std::string productCompanyName;
 	std::string modelName;
 	int price;
-
 };
 #endif // !MOBILE_PHONE
