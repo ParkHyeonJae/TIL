@@ -25,6 +25,12 @@
     <Filter Include="소스 파일\Array">
       <UniqueIdentifier>{e87191a7-8d96-4a3c-822e-baa3c42e8ed0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\class">
+      <UniqueIdentifier>{fd648cfc-180a-4af0-8c6c-1fd597c605fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\struct">
+      <UniqueIdentifier>{14617e34-2002-44af-9b0c-18c13d492d25}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="copyNmoveCtor.cpp">
@@ -38,6 +44,12 @@
     </ClCompile>
     <ClCompile Include="Array.cpp">
       <Filter>소스 파일\Array</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectVSClass.cpp">
+      <Filter>소스 파일\class</Filter>
+    </ClCompile>
+    <ClCompile Include="StructVSClass.cpp">
+      <Filter>소스 파일\struct</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

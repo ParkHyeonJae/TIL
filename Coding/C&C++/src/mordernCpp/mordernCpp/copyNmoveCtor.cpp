@@ -1,13 +1,13 @@
 #include <iostream>
 
-class Person
+class stPerson
 {
 public:
-	Person(std::string name, int age)
+	stPerson(std::string name, int age)
 		: name(std::move(name)), age(age) {};
-	Person(const Person& other) 
+	stPerson(const stPerson& other) 
 		: name(other.name), age(other.age) {};
-	Person(Person&& other) noexcept : name(std::move(other.name)), age(other.age) {};
+	stPerson(stPerson&& other) noexcept : name(std::move(other.name)), age(other.age) {};
 
 	std::string GetName() {
 		return name;
@@ -28,12 +28,12 @@ private:
 
 int main()
 {
-	Person a{ "ctor", 11 };
+	stPerson a{ "ctor", 11 };
 
 	a.Print();
-	Person b{ a };
+	stPerson b{ a };
 	b.Print();
-	Person c{ std::move(a) }; // Move R Value
+	stPerson c{ std::move(a) }; // Move R Value
 
 	c.Print();
 
