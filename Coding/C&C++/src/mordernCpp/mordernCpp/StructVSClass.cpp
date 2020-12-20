@@ -3,9 +3,6 @@
 /// <summary>
 /// struct 에서는 default 접근이 public이기 때문에 따로 접근제어를 하지 않아도 접근이 가능하다.
 /// 하지만 class는 struct와는 반대로 default가 private라서 바로 접근이 불가능하고 public 으로 해줘야만 접근이 가능하다.
-/// 
-/// struct에서도 function을 삽입할 수 있다.
-/// 그리고 Constructor와 Destructor 둘다 사용이 가능하다.
 /// </summary>
 struct stPerson
 {
@@ -35,7 +32,6 @@ void stPerson::Print()
 {
 	std::cout << GetName() << " : " << GetAge() << std::endl;
 }
-
 class clPerson
 {
 public:
@@ -68,6 +64,12 @@ void clPerson::Print()
 
 
 
+template<int a1, int a2>
+struct Add {
+	enum { value = a1 + a2; };
+};
+
+
 int main()
 {
 	stPerson stperson;
@@ -84,7 +86,7 @@ int main()
 	age = 30;
 	person.Print();
 
-	
+	Add<60, 20> result;
+	result.value;
 	return 0;
 }
-
