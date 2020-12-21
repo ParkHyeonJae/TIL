@@ -31,6 +31,9 @@
     <Filter Include="소스 파일\struct">
       <UniqueIdentifier>{14617e34-2002-44af-9b0c-18c13d492d25}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\SmartPointer">
+      <UniqueIdentifier>{c66da0a4-ffb4-494d-b28d-8353ae9c5169}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="copyNmoveCtor.cpp">
@@ -50,6 +53,9 @@
     </ClCompile>
     <ClCompile Include="StructVSClass.cpp">
       <Filter>소스 파일\struct</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartPointer.cpp">
+      <Filter>소스 파일\SmartPointer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
