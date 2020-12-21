@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js">
+
+    </script>
+    <script type="text/javascript" src="Print.js"></script>
+    <script type="text/javascript">
+    $("#line li").live("click",function() {
+      $("#line li").removeClass("selected");
+      $(this).addClass("selected");
+
+    })
+    </script>
+    <style media="screen">
+      #line .selected {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <input id="linebtn" type="button" name="linebtn" value="execute">
+    <ul id="line">
+      <li class="selected">Empty</li>
+      <li>Empty</li>
+      <li>Empty</li>
+      <li>Empty</li>
+      <li>Empty</li>
+    </ul>
+
+    <script>
+    PrintLine("HelloWorld");
+    Print("Hello");
+    Print("Hello");
+    var i = 0;
+
+    $("#linebtn").click(function(){
+
+      if(i === 0)
+      {
+        $("#line li").html("Hello World");
+
+        //$(".line li").html("Hello World").css("background-color", "red");
+        i = 1;
+      }
+      else{
+        $("#line li").text("Empty");
+        i = 0;
+      }
+
+    })
+
+
+
+
+    </script>
+  </body>
+</html>

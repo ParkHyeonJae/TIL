@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="Print.js"></script>
+
+    <style media="screen">
+      #line .selected {
+        background-color: red;
+      }
+      .box {
+          width: 50px;
+          height: 50px;
+          background-color: yellow;
+          box-sizing: border-box;
+          margin: 50px;
+          padding: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span class="box"></span>
+      <iframe src="https://www.youtube.com/embed/VI6dsMeABpU?start=181" allow="autoplay" id="audio"></iframe>
+      <br>
+
+      <input id="correct" type="text" name="Content" value="">
+      <input id="send" type="button" name="Send" value="제출">
+      <p>정답을 입력해주세요</p>
+    </div>
+
+    <script>
+
+    $("#correct").click(function() {
+      $("p").html("띄어쓰기까지 정확하게 입력해주세요..");
+
+    })
+
+      $("#send").click(function() {
+        var correctValue = $("#correct").val();
+        $("p").html("입력완료");
+      })
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+function Print(Content){
+  document.write(Content);
+  document.write("<br />");
+}
+    // 객체: 자료주고 Map이나 Dictionary와 마찬가지로 Key:Value 형태로 되어 있다.
+    var objects = {'HyeonJae': 77, 'Apple': 15, 'Banana': 80, 'Cheicken':34};
+
+    Print(objects['HyeonJae']);
+
+
+    for(var key in objects){
+      Print("Key is "+ key + ", Value is "+ objects[key]);
+    }
+
+    Print("");
+
+    var elements = {
+      'foo':1,
+       'foo1':2,
+       'foo2':5,
+       'fooooo': {'fooooo1': 45,'fooooo2': 18,'fooooo3': 674},
+       'show': function() {
+         for(var name in this.fooooo){
+           Print("Key is "+name+" Value is "+this.fooooo[name]);
+         }
+       }
+    };
+
+    elements.show();
+    </script>
+  </body>
+</html>

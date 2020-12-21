@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "Study_C_Sharp": {
-      "commandName": "Project",
-      "commandLineArgs": "/s /p"
-    }
-  }
-}
