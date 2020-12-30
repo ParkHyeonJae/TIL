@@ -54,7 +54,7 @@
     <ClCompile Include="StructVSClass.cpp">
       <Filter>소스 파일\struct</Filter>
     </ClCompile>
-    <ClCompile Include="SmartPointer.cpp">
+    <ClCompile Include="shared_ptr01.cpp">
       <Filter>소스 파일\SmartPointer</Filter>
     </ClCompile>
   </ItemGroup>
