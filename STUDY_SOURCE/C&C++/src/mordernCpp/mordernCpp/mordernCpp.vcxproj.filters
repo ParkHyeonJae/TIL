@@ -57,6 +57,9 @@
     <ClCompile Include="shared_ptr01.cpp">
       <Filter>소스 파일\SmartPointer</Filter>
     </ClCompile>
+    <ClCompile Include="ArrayAccess.cpp">
+      <Filter>소스 파일\Array</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MobilePhone.h">
