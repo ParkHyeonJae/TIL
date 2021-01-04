@@ -66,6 +66,9 @@
     <ClCompile Include="listVSVector.cpp">
       <Filter>소스 파일\vector</Filter>
     </ClCompile>
+    <ClCompile Include="Vector.cpp">
+      <Filter>소스 파일\vector</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MobilePhone.h">
