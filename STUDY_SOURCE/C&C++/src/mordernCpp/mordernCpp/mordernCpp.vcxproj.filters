@@ -37,6 +37,9 @@
     <Filter Include="소스 파일\vector">
       <UniqueIdentifier>{a37ce6fb-49c5-4350-9b30-28e9293b2961}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\random">
+      <UniqueIdentifier>{f57cf169-2f73-48c6-a290-74d8ecd78234}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="copyNmoveCtor.cpp">
@@ -68,6 +71,9 @@
     </ClCompile>
     <ClCompile Include="Vector.cpp">
       <Filter>소스 파일\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="random_uniform_distribution.cpp">
+      <Filter>소스 파일\random</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
