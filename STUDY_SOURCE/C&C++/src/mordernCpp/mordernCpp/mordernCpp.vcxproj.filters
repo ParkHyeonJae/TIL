@@ -34,6 +34,9 @@
     <Filter Include="소스 파일\SmartPointer">
       <UniqueIdentifier>{c66da0a4-ffb4-494d-b28d-8353ae9c5169}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\vector">
+      <UniqueIdentifier>{a37ce6fb-49c5-4350-9b30-28e9293b2961}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="copyNmoveCtor.cpp">
@@ -59,6 +62,9 @@
     </ClCompile>
     <ClCompile Include="ArrayAccess.cpp">
       <Filter>소스 파일\Array</Filter>
+    </ClCompile>
+    <ClCompile Include="listVSVector.cpp">
+      <Filter>소스 파일\vector</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
