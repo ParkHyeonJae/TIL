@@ -40,6 +40,9 @@
     <Filter Include="소스 파일\random">
       <UniqueIdentifier>{f57cf169-2f73-48c6-a290-74d8ecd78234}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\SmartPointer\Samples">
+      <UniqueIdentifier>{f2b61fcd-244d-473d-81d2-93f1b4d5cec1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="copyNmoveCtor.cpp">
@@ -60,9 +63,6 @@
     <ClCompile Include="StructVSClass.cpp">
       <Filter>소스 파일\struct</Filter>
     </ClCompile>
-    <ClCompile Include="shared_ptr01.cpp">
-      <Filter>소스 파일\SmartPointer</Filter>
-    </ClCompile>
     <ClCompile Include="ArrayAccess.cpp">
       <Filter>소스 파일\Array</Filter>
     </ClCompile>
@@ -74,6 +74,12 @@
     </ClCompile>
     <ClCompile Include="random_uniform_distribution.cpp">
       <Filter>소스 파일\random</Filter>
+    </ClCompile>
+    <ClCompile Include="shared_ptr01.cpp">
+      <Filter>소스 파일\SmartPointer\Samples</Filter>
+    </ClCompile>
+    <ClCompile Include="unique_ptr.cpp">
+      <Filter>소스 파일\SmartPointer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
