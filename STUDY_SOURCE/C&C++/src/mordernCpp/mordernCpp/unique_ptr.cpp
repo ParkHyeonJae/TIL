@@ -45,7 +45,8 @@ int main()
 	VRDevice* device03 = new VRDevice(std::move(device02));
 	device03->PrintInfo();
 	
-
+	//RAII (Resource Acquisition is initialization) : Resource 와 Object Life cycle을 sync 시킨다.
+	// Exclusive Ownership
 	std::unique_ptr<VRDevice> device04 = std::make_unique<VRDevice>(*device03);
 	device04->SetDevice("Oculus Quest 1");
 	device04->PrintInfo();
