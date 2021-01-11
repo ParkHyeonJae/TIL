@@ -87,6 +87,9 @@
     <ClCompile Include="weak_ptr.cpp">
       <Filter>소스 파일\SmartPointer</Filter>
     </ClCompile>
+    <ClCompile Include="dequeVSVector.cpp">
+      <Filter>소스 파일\vector</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MobilePhone.h">
