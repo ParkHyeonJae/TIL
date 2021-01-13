@@ -21,5 +21,8 @@
     <ClCompile Include="ShallowCopy_DeepCopy.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="operatorOverroading.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
