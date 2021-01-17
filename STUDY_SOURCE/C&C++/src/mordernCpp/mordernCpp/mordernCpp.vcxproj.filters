@@ -46,6 +46,9 @@
     <Filter Include="소스 파일\ctor\TIP">
       <UniqueIdentifier>{e79efe88-c65e-4827-b78d-6870acb09ef8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\unit_test">
+      <UniqueIdentifier>{781083b1-3d0d-4e91-b974-1fcaa6a1f809}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="copyNmoveCtor.cpp">
@@ -99,10 +102,19 @@
     <ClCompile Include="constructor_Initializer_list.cpp">
       <Filter>소스 파일\ctor\TIP</Filter>
     </ClCompile>
+    <ClCompile Include="GoogleTestDemo.cpp">
+      <Filter>소스 파일\unit_test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MobilePhone.h">
       <Filter>헤더 파일\preprocessor</Filter>
     </ClInclude>
+    <ClInclude Include="GoogleTestDemo.h">
+      <Filter>헤더 파일\preprocessor</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
