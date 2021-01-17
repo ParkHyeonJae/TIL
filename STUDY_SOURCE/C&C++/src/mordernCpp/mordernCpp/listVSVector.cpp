@@ -38,6 +38,7 @@ int main()
 	list -> O(1)
 	vector -> O(n)
 
+
 	deletion:
 	list -> O(1)
 	vector -> O(n)
