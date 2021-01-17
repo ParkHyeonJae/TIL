@@ -43,7 +43,7 @@
     <Filter Include="소스 파일\SmartPointer\Samples">
       <UniqueIdentifier>{f2b61fcd-244d-473d-81d2-93f1b4d5cec1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\TIP">
+    <Filter Include="소스 파일\ctor\TIP">
       <UniqueIdentifier>{e79efe88-c65e-4827-b78d-6870acb09ef8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -94,7 +94,10 @@
       <Filter>소스 파일\vector</Filter>
     </ClCompile>
     <ClCompile Include="const.cpp">
-      <Filter>소스 파일\TIP</Filter>
+      <Filter>소스 파일\ctor\TIP</Filter>
+    </ClCompile>
+    <ClCompile Include="constructor_Initializer_list.cpp">
+      <Filter>소스 파일\ctor\TIP</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
