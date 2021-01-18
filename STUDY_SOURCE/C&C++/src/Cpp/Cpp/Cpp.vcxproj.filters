@@ -36,5 +36,8 @@
     <ClCompile Include="namespace.cpp">
       <Filter>소스 파일\Practice\namespace</Filter>
     </ClCompile>
+    <ClCompile Include="reference.cpp">
+      <Filter>소스 파일\Practice</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
