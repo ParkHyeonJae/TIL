@@ -49,6 +49,9 @@
     <Filter Include="소스 파일\unit_test">
       <UniqueIdentifier>{781083b1-3d0d-4e91-b974-1fcaa6a1f809}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\parallels">
+      <UniqueIdentifier>{fa4f907e-fafe-4e93-9797-092b70c6b38f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="copyNmoveCtor.cpp">
@@ -104,6 +107,9 @@
     </ClCompile>
     <ClCompile Include="GoogleTestDemo.cpp">
       <Filter>소스 파일\unit_test</Filter>
+    </ClCompile>
+    <ClCompile Include="async.cpp">
+      <Filter>소스 파일\parallels</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
