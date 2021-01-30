@@ -8,8 +8,8 @@ TEST(TestCaseName, TestName) {
 }
 
 TEST(SUM_TEST_CASE, SumTest) {
-	EXPECT_EQ(3, sum(1, 2));
-	ASSERT_EQ(5, sum(3, 2));
+	EXPECT_EQ(3, sumForUnitTest(1, 2));
+	ASSERT_EQ(5, sumForUnitTest(3, 2));
 }
 
 

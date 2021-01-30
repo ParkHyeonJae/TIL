@@ -46,11 +46,12 @@ int main(void)
 	std::cout << "async Fin" << std::endl;
 
 
-	std::future<int> sumAsync = std::async(std::launch::async, sum, 10, 20);
-	
-	int result = sumAsync.get();
+	std::future<int> sumAsync01 = std::async(std::launch::async, sum, 10, 20);
+	std::future<int> sumAsync02 = std::async(std::launch::async, sum, 50, 60);
 
-	std::cout << result << std::endl;
+	int result = sumAsync01.get();
+	int result02 = sumAsync02.get();
+	std::cout << result << " : " << result02 << std::endl;
 
 	return 0;
 }

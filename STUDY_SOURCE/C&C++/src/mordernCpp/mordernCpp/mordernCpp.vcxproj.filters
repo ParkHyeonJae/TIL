@@ -111,6 +111,9 @@
     <ClCompile Include="async.cpp">
       <Filter>소스 파일\parallels</Filter>
     </ClCompile>
+    <ClCompile Include="openmp.cpp">
+      <Filter>소스 파일\parallels</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MobilePhone.h">
