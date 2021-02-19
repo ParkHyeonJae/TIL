@@ -39,7 +39,7 @@ private:
 int main(void)
 {
 	// Initalizer List
-
+	// High Priority Initalizer List
 	std::vector<int> v = { 1,2,3 };
 
 	Foo({ 2,2,2,2,2,2,2,2,2,2 });

@@ -21,5 +21,11 @@
     <ClCompile Include="InitializerList.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="DelegatingCtor.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="auto.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
