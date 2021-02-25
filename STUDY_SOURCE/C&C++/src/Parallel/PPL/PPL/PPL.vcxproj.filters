@@ -21,5 +21,8 @@
     <ClCompile Include="TaskClass.cpp">
       <Filter>Source Files\task</Filter>
     </ClCompile>
+    <ClCompile Include="NestedTask.cpp">
+      <Filter>Source Files\task</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

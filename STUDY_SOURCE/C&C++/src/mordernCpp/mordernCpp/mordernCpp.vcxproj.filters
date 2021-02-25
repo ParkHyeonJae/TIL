@@ -52,6 +52,12 @@
     <Filter Include="소스 파일\parallels">
       <UniqueIdentifier>{fa4f907e-fafe-4e93-9797-092b70c6b38f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\GPU">
+      <UniqueIdentifier>{94287613-c1f8-4a36-b37f-c119aedb24bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\GPU\CUDA">
+      <UniqueIdentifier>{1e376e8c-93d5-482b-bd96-e4b62309bc97}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="copyNmoveCtor.cpp">
@@ -113,6 +119,9 @@
     </ClCompile>
     <ClCompile Include="openmp.cpp">
       <Filter>소스 파일\parallels</Filter>
+    </ClCompile>
+    <ClCompile Include="cudaEx0.cpp">
+      <Filter>소스 파일\GPU\CUDA</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

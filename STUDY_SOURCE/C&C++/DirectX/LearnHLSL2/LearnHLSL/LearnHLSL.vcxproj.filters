@@ -15,20 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AngleBracket.cpp">
-      <Filter>Resource Files</Filter>
+    <ClCompile Include="BasicFramework.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="InitializerList.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DelegatingCtor.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="auto.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="decltype.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BasicFramework.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
