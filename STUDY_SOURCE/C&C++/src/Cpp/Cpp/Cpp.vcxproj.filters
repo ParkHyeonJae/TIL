@@ -39,5 +39,8 @@
     <ClCompile Include="reference.cpp">
       <Filter>소스 파일\Practice</Filter>
     </ClCompile>
+    <ClCompile Include="Switch_Case.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
