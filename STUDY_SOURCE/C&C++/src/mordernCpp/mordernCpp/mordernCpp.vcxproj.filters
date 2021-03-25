@@ -123,6 +123,9 @@
     <ClCompile Include="cudaEx0.cpp">
       <Filter>소스 파일\GPU\CUDA</Filter>
     </ClCompile>
+    <ClCompile Include="FalseSharing.cpp">
+      <Filter>소스 파일\parallels</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MobilePhone.h">
