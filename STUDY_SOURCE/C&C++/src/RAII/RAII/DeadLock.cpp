@@ -34,43 +34,39 @@ int sharedMemB = 0;
 
 // 
 
-void Bar();
-void Foo()
-{
-	std::lock_guard<std::recursive_mutex> lock1(gMutex_recursive);
-	sharedMemA++;
-	
-	Bar();		// 또한 이 처럼 같은 뮤텍스를 또다시 lock을 걸어주려고 하면 self deadlock에 걸리게 된다.
-	// 따라서 이러한 구조는 피해야 되지만 이런 구조를 어쩔 수 없이 사용해야 되는 구조라면 std::recursive_mutex를 사용하면 된다.
-}
-
-void Bar()
-{
-	std::lock_guard<std::recursive_mutex> lock1(gMutex_recursive);
-	sharedMemB--;
-
-}
-
+//void Bar();
 //void Foo()
 //{
-//	std::lock_guard<std::mutex> lock1(gMutexA);
+//	std::lock_guard<std::recursive_mutex> lock1(gMutex_recursive);
 //	sharedMemA++;
-//
-//	std::lock_guard<std::mutex> lock2(gMutexB);
-//	sharedMemB--;
-//
-//
+//	
+//	Bar();		// 또한 이 처럼 같은 뮤텍스를 또다시 lock을 걸어주려고 하면 self deadlock에 걸리게 된다.
+//	// 따라서 이러한 구조는 피해야 되지만 이런 구조를 어쩔 수 없이 사용해야 되는 구조라면 std::recursive_mutex를 사용하면 된다.
 //}
 //
 //void Bar()
 //{
-//	std::lock_guard<std::mutex> lock2(gMutexB);
+//	std::lock_guard<std::recursive_mutex> lock1(gMutex_recursive);
 //	sharedMemB--;
 //
-//	std::lock_guard<std::mutex> lock1(gMutexA);
-//	sharedMemA++;
-//
 //}
+
+void Foo()
+{
+	// scopeed_lock을 사용해서 한번에 여러개의 mutex를 담을 수 있어서 이를 통해서 deadLock이 일어나는 실수를 일부 막을 수 있다.
+	std::scoped_lock lock1(gMutexA, gMutexB);
+	sharedMemA++;
+	sharedMemB--;
+
+
+}
+
+void Bar()
+{
+	std::scoped_lock lock1(gMutexA, gMutexB);
+	sharedMemA++;
+
+}
 
 int main(void)
 {
