@@ -129,6 +129,9 @@
     <ClCompile Include="is-a_has-a_dynamicFunctionBinding.cpp">
       <Filter>소스 파일\ctor\TIP</Filter>
     </ClCompile>
+    <ClCompile Include="string.cpp">
+      <Filter>소스 파일\ctor\TIP</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MobilePhone.h">
