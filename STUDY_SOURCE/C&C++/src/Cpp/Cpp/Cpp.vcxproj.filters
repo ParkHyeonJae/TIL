@@ -22,6 +22,9 @@
     <Filter Include="소스 파일\ExternVsStatic">
       <UniqueIdentifier>{0e12fd83-3075-40dc-bf99-6f52b62c25e8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Static">
+      <UniqueIdentifier>{362dc807-ae13-4487-b8fb-daf7c46d998f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="structSize.cpp">
@@ -52,7 +55,15 @@
       <Filter>소스 파일\ExternVsStatic</Filter>
     </ClCompile>
     <ClCompile Include="Static.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Static</Filter>
     </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>소스 파일\Static</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Singleton.hpp">
+      <Filter>소스 파일\Static</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
