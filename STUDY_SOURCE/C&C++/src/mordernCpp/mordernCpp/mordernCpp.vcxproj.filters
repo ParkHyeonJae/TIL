@@ -43,9 +43,6 @@
     <Filter Include="소스 파일\SmartPointer\Samples">
       <UniqueIdentifier>{f2b61fcd-244d-473d-81d2-93f1b4d5cec1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\ctor\TIP">
-      <UniqueIdentifier>{e79efe88-c65e-4827-b78d-6870acb09ef8}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\unit_test">
       <UniqueIdentifier>{781083b1-3d0d-4e91-b974-1fcaa6a1f809}</UniqueIdentifier>
     </Filter>
@@ -57,6 +54,9 @@
     </Filter>
     <Filter Include="소스 파일\GPU\CUDA">
       <UniqueIdentifier>{1e376e8c-93d5-482b-bd96-e4b62309bc97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\TIP">
+      <UniqueIdentifier>{e79efe88-c65e-4827-b78d-6870acb09ef8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -106,10 +106,10 @@
       <Filter>소스 파일\vector</Filter>
     </ClCompile>
     <ClCompile Include="const.cpp">
-      <Filter>소스 파일\ctor\TIP</Filter>
+      <Filter>소스 파일\TIP</Filter>
     </ClCompile>
     <ClCompile Include="constructor_Initializer_list.cpp">
-      <Filter>소스 파일\ctor\TIP</Filter>
+      <Filter>소스 파일\TIP</Filter>
     </ClCompile>
     <ClCompile Include="GoogleTestDemo.cpp">
       <Filter>소스 파일\unit_test</Filter>
@@ -127,10 +127,10 @@
       <Filter>소스 파일\parallels</Filter>
     </ClCompile>
     <ClCompile Include="is-a_has-a_dynamicFunctionBinding.cpp">
-      <Filter>소스 파일\ctor\TIP</Filter>
+      <Filter>소스 파일\TIP</Filter>
     </ClCompile>
     <ClCompile Include="string.cpp">
-      <Filter>소스 파일\ctor\TIP</Filter>
+      <Filter>소스 파일\TIP</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

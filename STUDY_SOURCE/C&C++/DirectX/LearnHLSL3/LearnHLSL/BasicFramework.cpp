@@ -34,6 +34,9 @@ const char* gAppName = "초 간단 쉐이더 데모 프레임워크";
 
 float gRotationY = 0.0f;
 
+D3DXVECTOR4 gWorldLightPosition(500.0f, 500.0f, -500.0f, 1.0f);
+D3DXVECTOR4 gWorldCameraPosition(0, 0, -200, 1.0f);
+
 
 // ----------------------------------------------------------------------------------
 // 프로그램 진입점 / 메시지 루프
@@ -304,7 +307,7 @@ void RenderScene()
 {
 	// 뷰 행렬을 만든다
 	D3DXMATRIXA16 matView;
-	D3DXVECTOR3 vEyePt(0.0f, 0.0f, -200.0f);
+	D3DXVECTOR3 vEyePt(D3DXVECTOR3(gWorldCameraPosition.x, gWorldCameraPosition.y, gWorldCameraPosition.z));
 	D3DXVECTOR3 vLookatPt(0.0f, 0.0f, 0.0f);
 	D3DXVECTOR3 vUpVec(0.0f, 1.0f, 0.0f);
 
@@ -332,6 +335,8 @@ void RenderScene()
 	gpTextureMappingShader->SetMatrix("gProjectionMatrix", &matProjection);
 
 	gpTextureMappingShader->SetTexture("DiffuseMap_Tex", gpEarthDM);
+	gpTextureMappingShader->SetVector("gWorldLightPosition", &gWorldLightPosition);
+	gpTextureMappingShader->SetVector("gWorldCameraPosition", &gWorldCameraPosition);
 
 	UINT numPasses = 0;
 	gpTextureMappingShader->Begin(&numPasses, NULL);

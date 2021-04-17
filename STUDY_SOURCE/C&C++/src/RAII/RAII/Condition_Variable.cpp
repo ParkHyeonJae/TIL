@@ -10,7 +10,7 @@ void Foo()
 {
 	std::unique_lock lock(gMutex);
 
-	cv.wait(lock, []() -> bool {return condition == 1; });		// wait일 때는 unlock을 시켜주게 되고 condition 이 맞게떨어지게 되면 lock을 얻게 된다.
+	cv.wait(lock, []() -> decltype(condition) {return condition == 1; });		// wait일 때는 unlock을 시켜주게 되고 condition 이 맞게떨어지게 되면 lock을 얻게 된다.
 
 	std::cout << "lock is acquired";
 
