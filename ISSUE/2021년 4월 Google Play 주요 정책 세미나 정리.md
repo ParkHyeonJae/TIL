@@ -1,8 +1,6 @@
 ## 2021년 4월 Google Play 주요 정책 세미나 정리
 
-![image-20210417083435023](.\Images\image-20210417083435023.png)
-
-
+![image-20210417083435023](https://raw.githubusercontent.com/ParkHyeonJae/TIL/master/ISSUE/Images/image-20210417083435023.png)
 
 ### 정책 준수 마감기한이 다가오는 Google Play 주요 정책
 
