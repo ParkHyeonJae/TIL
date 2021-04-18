@@ -37,9 +37,11 @@ private:
                     // padding: + 4bytes
 };      // 24 bytes
 
+Cat_16 static_cat;      // 컴파일 타임에 static 메모리 공간에 차지
+
 int main(void)
 {
-    Cat_16 cat_16;
+    Cat_16 cat_16;      // Stack 공간에 차지
     std::cout << "cat_16 : " << sizeof(cat_16) << "\n";
 
     Cat_24 cat_24;
@@ -49,5 +51,8 @@ int main(void)
     Cat_32 cat_32;
     std::cout << "cat_32 : " << sizeof(cat_32) << "\n";
 
+
+    Cat_16 *cat_heap = new Cat_16;      // Heap 공간에 8byte 차지
+    delete cat_heap;
     return 0;
 }
