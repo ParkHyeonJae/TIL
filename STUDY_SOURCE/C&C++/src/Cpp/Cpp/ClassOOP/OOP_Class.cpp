@@ -32,7 +32,7 @@ class Animal
     void Speak();
     private:
     int mAge;
-}
+};
 
 class Human : public Animal
 {
