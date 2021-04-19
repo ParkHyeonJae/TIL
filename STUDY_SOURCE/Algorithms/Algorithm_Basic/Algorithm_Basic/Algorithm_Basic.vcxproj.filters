@@ -24,5 +24,8 @@
     <ClCompile Include="Merge_Sorted_Array.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Quick_Sort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
