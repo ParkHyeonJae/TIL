@@ -138,6 +138,9 @@
     <ClCompile Include="Set.cpp">
       <Filter>소스 파일\set</Filter>
     </ClCompile>
+    <ClCompile Include="Unordered_set.cpp">
+      <Filter>소스 파일\set</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MobilePhone.h">
