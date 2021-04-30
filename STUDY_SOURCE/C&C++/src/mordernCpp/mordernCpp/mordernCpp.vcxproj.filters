@@ -58,6 +58,9 @@
     <Filter Include="소스 파일\TIP">
       <UniqueIdentifier>{e79efe88-c65e-4827-b78d-6870acb09ef8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\set">
+      <UniqueIdentifier>{0803ac2f-281c-499f-9d55-6c4d93e953b5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="copyNmoveCtor.cpp">
@@ -131,6 +134,9 @@
     </ClCompile>
     <ClCompile Include="string.cpp">
       <Filter>소스 파일\TIP</Filter>
+    </ClCompile>
+    <ClCompile Include="Set.cpp">
+      <Filter>소스 파일\set</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
