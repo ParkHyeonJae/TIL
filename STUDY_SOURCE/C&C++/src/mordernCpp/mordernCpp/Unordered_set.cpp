@@ -23,7 +23,7 @@ int main(void)
 	UOrdSet.emplace("def");
 	UOrdSet.emplace("ghi");
 	UOrdSet.emplace("jkl");
-
+	
 	std::cout << UOrdSet.bucket_count() << "\n";
 
 	std::cout << std::hash<std::string>{}("abc")  << " : " << UOrdSet.bucket("abc") << "\n";
