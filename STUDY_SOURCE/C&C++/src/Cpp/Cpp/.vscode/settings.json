@@ -43,6 +43,8 @@
         "xutility": "cpp",
         "bit": "cpp",
         "clocale": "cpp",
-        "ctime": "cpp"
+        "ctime": "cpp",
+        "list": "cpp",
+        "vector": "cpp"
     }
 }

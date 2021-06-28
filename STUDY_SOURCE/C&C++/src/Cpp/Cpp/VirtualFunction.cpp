@@ -68,8 +68,9 @@ int main(void)
 
 	animal->speak();
 	
-
+	
 	delete animal;
 
+	
 	return 0;
 }

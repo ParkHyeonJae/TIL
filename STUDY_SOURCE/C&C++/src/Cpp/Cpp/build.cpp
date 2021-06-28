@@ -20,7 +20,6 @@ int main(void)
     std::cout << "HI" << std::endl;
 
     std::variant<int, float> ii = 0;        // C++17
-
     
     return 0;
 }

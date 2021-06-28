@@ -82,8 +82,8 @@ int main(void)
 
 
 	*/
-	wp = chatBot01;
 	wp = chatBot02;
+	wp = chatBot01;
 
 	//chatBot01.reset();
 
